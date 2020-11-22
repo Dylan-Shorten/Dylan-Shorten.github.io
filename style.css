@@ -12,7 +12,7 @@ html, body {
   height: 100%;
 }
 .carousel-caption h1 {
-  font-size: 400%;
+  font-size: 325%;
   text-transform: uppercase;
   text-shadow: 1px 1px 15px #000;
 }
@@ -23,13 +23,11 @@ html, body {
   padding-bottom: 1rem;
 }
 .carousel-logo {
-  top: 0;
-  bottom: auto;
   filter:drop-shadow(1px 1px 5px #000);
 }
 .carousel-text {
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
 }
 .jumbotron {
@@ -101,10 +99,10 @@ hr.light-100 {
   .carousel-text {
     top: 45%;
   }
-  .carousel-caption h1 {
-    font-size: 350%;
+  .carousel-text h1 {
+    font-size: 225%;
   }
-  .carousel-caption h3 {
+  .carousel-text h3 {
     font-size: 140%;
     font-weight: 400;
     padding-bottom: .2rem;
@@ -119,7 +117,7 @@ hr.light-100 {
     top: 40%;
   }
   .carousel-text h1 {
-    font-size: 250%;
+    font-size: 200%;
   }
   .carousel-text h3 {
     font-size: 110%;
