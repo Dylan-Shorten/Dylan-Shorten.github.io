@@ -22,23 +22,37 @@
 	<li data-target="#slides" data-slide-to="2"></li>
 </ul>
 
+<script>
+	function onPlayerStateChange(event)
+	{
+		if (event.data == TY.PlayerState.PLAYING || event.data == YT.PlayerState.BUFFERING)
+			$("#slides").carousel('pause');
+		else
+			$("#slides").carousel();
+	}
+</script>
+
 <div class="carousel-inner">
 	<div class="carousel-item active">
 		<img src="img/Throw_Thyself_Poster.png">
+		<div class="carousel-caption carousel-text">
+			<h1 class="display-2">Throw Thyself</h1>
+			<h3>Local Multiplayer<br>Battleground Arena</h3>
+		</div>
 		<div class="carousel-caption">
+			<div class="project-video">
+				<iframe src="https://www.youtube.com/embed/H4tLKVdObjM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 			<div class="col carousel-logo">
 				<a href="https://bitbucket.org/team-argonauts/throw-thyself-unity-project/src/master/"><i class="fab fa-bitbucket"></i></a>
 				<a href="https://argonauts.itch.io/throw-thyself"><i class="fab fa-itch-io"></i></a>
+				<a class="project-youtube-icon" href="https://www.youtube.com/watch?v=H4tLKVdObjM"><i class="fab fa-youtube"></i></a>
 			</div>
 			<div class="contribution">
 				<div class="row jumbotron">
 					<p>This is text describing my contribution to the Throw Thyself project.</p>
 				</div>
 			</div>
-		</div>
-		<div class="carousel-caption carousel-text">
-			<h1 class="display-2">Throw Thyself</h1>
-			<h3>Local Multiplayer<br>Battleground Arena</h3>
 		</div>
 	</div>
 	<div class="carousel-item">

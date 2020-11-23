@@ -22,18 +22,32 @@ html, body {
   text-shadow: 2px 2px 2px #000;
   padding-bottom: 1rem;
 }
+.project-video {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.project-video iframe {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+}
+.project-youtube-icon {
+  display: none;
+}
 .carousel-logo {
   padding-bottom: 10%;
   font-size: 4.5em;
   filter: drop-shadow(2px 2px 2px #000);
 }
 .carousel-logo a {
-  padding: 5%;
+  margin: 5%;
 }
 .carousel-text {
   position: absolute;
-  top: 35%;
-  transform: translateY(-50%);
+  top: 0%;
+  bottom: auto;
 }
 .contribution {
   position: absolute;
@@ -76,6 +90,9 @@ html, body {
 .fa-itch-io {
   color: #fa5c5c;
 }
+.fa-youtube {
+  color: #c4302b;
+}
 .fa-linkedin {
   color: #0a66c2;
 }
@@ -85,6 +102,7 @@ html, body {
 .fa-github:hover,
 .fa-bitbucket:hover,
 .fa-itch-io:hover,
+.fa-youtube:hover,
 .fa-linkedin:hover,
 .fa-twitter:hover {
   color: #d5d5d5;
@@ -116,7 +134,7 @@ hr.light-100 {
 /*---Media Queries --*/
 @media (max-width: 992px) {
   .carousel-text {
-    top: 35%;
+    top: 0%;
   }
   .carousel-text h1 {
     font-size: 325%;
@@ -131,7 +149,7 @@ hr.light-100 {
     font-size: 3em;
   }
   .carousel-logo a {
-    padding: 5%;
+    margin: 5%;
   }
   .contribution {
     font-size: 75%;
@@ -143,7 +161,7 @@ hr.light-100 {
   }
 @media (max-width: 768px) {
   .carousel-text {
-    top: 37.5%;
+    top: 5%;
   }
   .carousel-text h1 {
     font-size: 225%;
@@ -153,12 +171,18 @@ hr.light-100 {
     font-weight: 400;
     padding-bottom: .2rem;
   }
+  .project-video {
+    display: none;
+  }
+  .project-youtube-icon {
+    display: inline;
+  }
   .carousel-logo {
     padding-bottom: 12.5%;
     font-size: 2.5em;
   }
   .carousel-logo a {
-    padding: 5%;
+    margin: 2.5%;
   }
   .contribution {
     font-size: 60%;
@@ -171,7 +195,7 @@ hr.light-100 {
 }
 @media (max-width: 576px) {
   .carousel-text {
-    top: 40%;
+    top: 5%;
   }
   .carousel-text h1 {
     font-size: 150%;
@@ -181,11 +205,11 @@ hr.light-100 {
   }
   .carousel-logo {
     position: absolute;
-    bottom: -100%;
+    bottom: -80%;
     font-size: 2em;
   }
   .carousel-logo a {
-    padding: 5%;
+    margin: 3%;
   }
   .contribution {
     display: none;
