@@ -11,6 +11,12 @@ html, body {
   width: 100%;
   height: 100%;
 }
+.carousel-control-icon a span
+{
+  width: 30px;
+  height: 30px;
+  filter:drop-shadow(3px 3px 1px #000);
+}
 .carousel-caption h1 {
   font-size: 400%;
   text-transform: uppercase;
@@ -22,6 +28,9 @@ html, body {
   text-shadow: 2px 2px 2px #000;
   padding-bottom: 1rem;
 }
+br {
+  display: none;
+}
 .project-video {
   position: relative;
   padding-bottom: 56.25%;
@@ -32,6 +41,7 @@ html, body {
   left: 25%;
   width: 50%;
   height: 50%;
+  box-shadow: #000 5px 5px 15px;
 }
 .project-youtube-icon {
   display: none;
@@ -57,11 +67,9 @@ html, body {
   font-size: 100%;
 }
 .contribution .jumbotron {
-  margin-bottom: 4%;
   background-color: rgba(25, 25, 25, 0.5);
   filter: drop-shadow(2px 2px 2px #000);
-  padding-top: 1rem;
-  padding-bottom: 0;
+  padding: 2%;
   border-radius: 5;
 }
 .contribution p {
@@ -80,18 +88,13 @@ html, body {
   font-size: 4.5em;
   padding: 7.5%;
 }
+.fa-bitbucket,
+.fa-itch-io,
+.fa-youtube {
+  color: #d5d5d5;
+}
 .fa-github {
   color: #6e5494;
-}
-.fa-bitbucket {
-  color: #2684FF;
-  text-shadow: 3px 3px 16px #272634;
-}
-.fa-itch-io {
-  color: #fa5c5c;
-}
-.fa-youtube {
-  color: #c4302b;
 }
 .fa-linkedin {
   color: #0a66c2;
@@ -105,7 +108,7 @@ html, body {
 .fa-youtube:hover,
 .fa-linkedin:hover,
 .fa-twitter:hover {
-  color: #d5d5d5;
+  color: #868686;
 }
 footer {
   background-color: #3f3f3f;
@@ -144,6 +147,13 @@ hr.light-100 {
     font-weight: 400;
     padding-bottom: .2rem;
   }
+  .project-video iframe {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+  }
   .carousel-logo {
     padding-bottom: 12.5%;
     font-size: 3em;
@@ -170,6 +180,9 @@ hr.light-100 {
     font-size: 110%;
     font-weight: 400;
     padding-bottom: .2rem;
+  }
+  br {
+    display: inline;
   }
   .project-video {
     display: none;
@@ -199,20 +212,23 @@ hr.light-100 {
   }
   .carousel-text h1 {
     font-size: 150%;
+    margin-bottom: 1%;
   }
   .carousel-text h3 {
     font-size: 75%;
   }
   .carousel-logo {
     position: absolute;
-    bottom: -80%;
+    bottom: -140%;
     font-size: 2em;
   }
   .carousel-logo a {
     margin: 3%;
   }
-  .contribution {
-    display: none;
+  .contribution .jumbotron {
+    padding: 1%;
+    margin: 5%;
+    margin-bottom: 10%;
   }
   .carousel-indicators {
     display: none;
