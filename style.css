@@ -86,6 +86,12 @@ br {
 .padding {
   padding-bottom: 2rem;
 }
+.skills-logo {
+  font-size: 2.5em;
+}
+.skills-text {
+  font-size: 2.5em;
+}
 .social a {
   font-size: 4.5em;
   padding: 7.5%;
@@ -171,6 +177,12 @@ hr.light-100 {
   .contribution {
     font-size: 75%;
   }
+  .skills-logo {
+    font-size: 2em;
+  }
+  .skills-text {
+    font-size: 2em;
+  }
   .social a {
     font-size: 4em;
     padding: 7%;
@@ -207,6 +219,12 @@ hr.light-100 {
   .contribution {
     font-size: 60%;
   }
+  .skills-logo {
+    font-size: 1.5em;
+  }
+  .skills-text {
+    font-size: 1.5em;
+  }
   .social a {
     font-size: 2.5em;
     padding-left: 7.5%;
@@ -239,6 +257,12 @@ hr.light-100 {
   }
   .carousel-indicators {
     display: none;
+  }
+  .skills-logo {
+    font-size: 1em;
+  }
+  .skills-text {
+    font-size: 1em;
   }
   .social a {
     font-size: 2em;
