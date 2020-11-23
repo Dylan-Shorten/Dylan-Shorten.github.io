@@ -18,12 +18,12 @@ html, body {
   filter:drop-shadow(3px 3px 1px #000);
 }
 .carousel-caption h1 {
-  font-size: 400%;
+  font-size: 325%;
   text-transform: uppercase;
   text-shadow: 2px 2px 3px #000;
 }
 .carousel-caption h3 {
-  font-size: 200%;
+  font-size: 175%;
   font-weight: 500;
   text-shadow: 2px 2px 2px #000;
   padding-bottom: 1rem;
@@ -37,7 +37,7 @@ br {
 }
 .project-video iframe {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 25%;
   width: 50%;
   height: 50%;
@@ -45,6 +45,7 @@ br {
   -webkit-box-shadow: #000 5px 5px 15px;
   -o-box-shadow: #000 5px 5px 15px;
   box-shadow: #000 5px 5px 15px;
+  outline: 3px solid white;
 }
 .project-youtube-icon {
   display: none;
@@ -80,7 +81,8 @@ br {
   text-align: center;
 }
 .about-me .jumbotron {
-  margin:0;
+  margin: 0;
+  padding: 2%;
   border-radius: 0;
 }
 .padding {
@@ -90,10 +92,10 @@ br {
   font-size: 2.5em;
 }
 .skills-text {
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 .social a {
-  font-size: 3.25em;
+  font-size: 3.75em;
   padding: 5%;
 }
 
@@ -147,6 +149,11 @@ hr.light-100 {
   margin-top: .8rem;
   margin-bottom: 1rem;
 }
+hr.dark-100 {
+  border-top: 1px solid #181818;
+  width: 100%;
+  margin: 0;
+}
 
 
 
@@ -157,7 +164,7 @@ hr.light-100 {
     top: 0%;
   }
   .carousel-text h1 {
-    font-size: 325%;
+    font-size: 250%;
   }
   .carousel-text h3 {
     font-size: 140%;
@@ -166,7 +173,7 @@ hr.light-100 {
   }
   .project-video iframe {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 30%;
     width: 40%;
     height: 40%;
@@ -185,7 +192,7 @@ hr.light-100 {
     font-size: 2em;
   }
   .skills-text {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .social a {
     font-size: 2.5em;
@@ -197,7 +204,7 @@ hr.light-100 {
     top: 5%;
   }
   .carousel-text h1 {
-    font-size: 225%;
+    font-size: 195%;
   }
   .carousel-text h3 {
     font-size: 110%;
@@ -230,7 +237,7 @@ hr.light-100 {
     font-size: 1.5em;
   }
   .social a {
-    font-size: 2em;
+    font-size: 1.5em;
     padding-left: 7.5%;
     padding-right: 7.5%;
   }
@@ -256,8 +263,9 @@ hr.light-100 {
   }
   .contribution .jumbotron {
     padding: 1%;
+    padding-bottom: 0%;
     margin: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
   }
   .carousel-indicators {
     display: none;
