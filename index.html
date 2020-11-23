@@ -15,22 +15,13 @@
 
 
 <!--- Image Slider -->
-<div id="slides" class="carousel slide" data-ride="carousel">
+<div id="slides" class="carousel slide" data-interval="false">
+
 <ul class="carousel-indicators">
 	<li data-target="#slides" data-slide-to="0" class="active"></li>
 	<li data-target="#slides" data-slide-to="1"></li>
 	<li data-target="#slides" data-slide-to="2"></li>
 </ul>
-
-<script>
-	function onPlayerStateChange(event)
-	{
-		if (event.data == TY.PlayerState.PLAYING || event.data == YT.PlayerState.BUFFERING)
-			$("#slides").carousel('pause');
-		else
-			$("#slides").carousel();
-	}
-</script>
 
 <div class="carousel-inner">
 	<div class="carousel-item active">
@@ -65,7 +56,7 @@
 			<div class="contribution">
 				<div class="jumbotron">
 					<div class="jumbotron-background"></div>
-					<p>This is text describing my contribution to the Marvelous project.</p>
+					<p>This is text describing my contribution to the Marvelous Murgo project.</p>
 				</div>
 			</div>
 		</div>

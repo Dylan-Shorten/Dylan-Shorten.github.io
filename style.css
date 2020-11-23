@@ -41,6 +41,9 @@ br {
   left: 25%;
   width: 50%;
   height: 50%;
+  -moz-box-shadow: #000 5px 5px 15px;
+  -webkit-box-shadow: #000 5px 5px 15px;
+  -o-box-shadow: #000 5px 5px 15px;
   box-shadow: #000 5px 5px 15px;
 }
 .project-youtube-icon {
@@ -64,7 +67,6 @@ br {
   left: 0;
   right: 0;
   bottom: 0;
-  font-size: 100%;
 }
 .contribution .jumbotron {
   background-color: rgba(25, 25, 25, 0.5);
@@ -88,11 +90,18 @@ br {
   font-size: 4.5em;
   padding: 7.5%;
 }
+
 .fa-bitbucket,
 .fa-itch-io,
 .fa-youtube {
   color: #d5d5d5;
 }
+.fa-bitbucket:hover,
+.fa-itch-io:hover,
+.fa-youtube:hover {
+  color: #868686;
+}
+
 .fa-github {
   color: #6e5494;
 }
@@ -103,13 +112,11 @@ br {
   color: #00aced;
 }
 .fa-github:hover,
-.fa-bitbucket:hover,
-.fa-itch-io:hover,
-.fa-youtube:hover,
 .fa-linkedin:hover,
 .fa-twitter:hover {
-  color: #868686;
+  color: #d5d5d5;
 }
+
 footer {
   background-color: #3f3f3f;
   color: #d5d5d5;
