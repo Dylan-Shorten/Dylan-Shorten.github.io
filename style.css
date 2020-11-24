@@ -22,8 +22,8 @@ html, body {
 }
 .carousel-control-icon a span
 {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   filter:drop-shadow(3px 3px 1px #000);
 }
 .carousel-caption h1 {
@@ -47,6 +47,7 @@ br {
 .project-video iframe {
   position: absolute;
   top: 45%;
+  bottom: 55%;
   left: 25%;
   width: 50%;
   height: 50%;
@@ -81,13 +82,27 @@ br {
 .contribution .jumbotron {
   background-color: rgba(25, 25, 25, 0.75);
   filter: drop-shadow(2px 2px 2px #000);
-  padding: 2%;
+  padding: 1.5%;
   outline: 2px solid #FFF;
 }
 .contribution p {
   color: #FFF;
   width: 100%;
   text-align: center;
+  font-size: 75%;
+  margin: 0;
+}
+.throw-thyself-contribution:after {
+  content: 'Throw Thyself is a local multiplayer physics-based battleground arena. I worked on this project as my primary 2nd year major project over the course of 4 months. Main responsibilities included creating and implementing a fluent local multiplayer system and handling fast paced physics interactions.'
+}
+.honour-among-thieves-contribution:after {
+  content: ''
+}
+.marvelous-murgo-contribution:after {
+  content: ''
+}
+.ultraball-contribution:after {
+  content: ''
 }
 .about-me .jumbotron {
   margin: 0;
@@ -159,9 +174,10 @@ hr.light-100 {
   margin-bottom: 1rem;
 }
 hr.dark-100 {
-  border-top: 1px solid #181818;
+  border-top: 1px solid #363636;
   width: 100%;
   margin: 0;
+  margin-top: 2%;
 }
 
 
@@ -194,8 +210,8 @@ hr.dark-100 {
   .carousel-logo a {
     margin: 5%;
   }
-  .contribution {
-    font-size: 75%;
+  .contribution p {
+    font-size: 60%;
   }
   .skills-logo {
     font-size: 2em;
@@ -236,8 +252,24 @@ hr.dark-100 {
   .carousel-logo a {
     margin: 2.5%;
   }
-  .contribution {
-    font-size: 60%;
+  .contribution p {
+    font-size: 55%;
+  }
+  .carousel-control-icon a span {
+    width: 40px;
+    height: 40px;
+  }
+  .throw-thyself-contribution:after {
+    content: 'My primary 2nd year major project. 4 Month Duration. Main responsibilities included creating and implementing a fluent local multiplayer system and handling fast paced physics interactions.'
+  }
+  .honour-among-thieves-contribution:after {
+    content: 'My secondary 2nd year major project. 4 Month Duration. Main responsibilities included creating tools for the developers to use and.'
+  }
+  .marvelous-murgo-contribution:after {
+    content: ''
+  }
+  .ultraball-contribution:after {
+    content: ''
   }
   .skills-logo {
     font-size: 1.5em;
@@ -272,16 +304,22 @@ hr.dark-100 {
   }
   .contribution .jumbotron {
     padding: 1%;
-    padding-bottom: 0%;
     margin: 5%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     outline-width: 1px;
+  }
+  .contribution p {
+    font-size: 50%;
+  }
+  .carousel-control-icon a span {
+    width: 30px;
+    height: 30px;
   }
   .carousel-indicators {
     display: none;
   }
   .skills-logo {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .skills-text {
     font-size: 1em;
