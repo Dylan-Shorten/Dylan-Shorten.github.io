@@ -127,6 +127,10 @@ br {
 .about-me p {
   font-size: 1.25vw;
 }
+.about-me-button a {
+  color: #444;
+  border-width: 2px;
+}
 .padding {
   padding-bottom: 2rem;
 }
@@ -309,6 +313,9 @@ hr.dark-100 {
   }
   .about-me p {
     font-size: 2.5vw;
+    text-align: center;
+  }
+  .about-me-button {
     text-align: center;
   }
   .skills-logo {
