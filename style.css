@@ -8,10 +8,10 @@ html, body {
   scroll-behavior: smooth;
 }
 .header {
-  background-color: #DDD;
+  background-color: #e9ecef;
   color: #2c2c2c;
   text-shadow: 1px 1px 2px #2c2c2c;
-  border-bottom: 4px solid #888;
+  border-bottom: 4px solid #BBB;
 }
 .header h1 {
   font-size: 2.5em;
@@ -102,7 +102,7 @@ br {
   margin: 0;
 }
 .throw-thyself-contribution:after {
-  content: 'Throw Thyself is a local multiplayer physics-based battleground arena. I worked on this project as my primary 2nd year major project over the course of 4 months. My main responsibilities as the programmer included creating and implementing a fluent local multiplayer system and handling fast paced physics interactions.'
+  content: 'Throw Thyself is a local multiplayer physics-based battleground arena. I worked on this project as my primary 2nd year major project over the course of 4 months. My main responsibilities as the programmer included creating a fluent local multiplayer system and handling fast paced physics interactions.'
 }
 .honour-among-thieves-contribution:after {
   content: 'Honour Among Thieves is a local co-op sabotage-heavy party game. I worked on this project as a secondary 2nd year major project over the course of 4 months. My main duty was programming all the Unity editor tools the developers needed to create their game without any coding requirements.'
@@ -117,6 +117,15 @@ br {
   margin: 0;
   padding: 2%;
   border-radius: 0;
+  text-align: center;
+}
+.about-me img {
+  width: 50%;
+  height: auto;
+  outline: 3px solid #AAA;
+}
+.about-me p {
+  font-size: 1.25vw;
 }
 .padding {
   padding-bottom: 2rem;
@@ -128,7 +137,7 @@ br {
   font-size: 1.5em;
 }
 .social a {
-  font-size: 3.75em;
+  font-size: 4vw;
   padding: 5%;
 }
 
@@ -225,6 +234,12 @@ hr.dark-100 {
   .contribution p {
     font-size: 1.25vw;
   }
+  .about-me img {
+    width: 60%;
+  }
+  .about-me p {
+    font-size: 1.5vw;
+  }
   .skills-logo {
     font-size: 2em;
   }
@@ -232,7 +247,7 @@ hr.dark-100 {
     font-size: 1.5em;
   }
   .social a {
-    font-size: 2.5em;
+    font-size: 6vw;
     padding: 5%;
   }
   }
@@ -286,6 +301,16 @@ hr.dark-100 {
   .ultraball-contribution:after {
     content: 'My 1st year major project, created over 2 months. My key responsibilities included implementing the NVIDIA FleX soft body library.'
   }
+  .about-me img {
+    width: 30%;
+  }
+  .about-me h3 {
+    text-align: center;
+  }
+  .about-me p {
+    font-size: 2.5vw;
+    text-align: center;
+  }
   .skills-logo {
     font-size: 1.5em;
   }
@@ -293,7 +318,7 @@ hr.dark-100 {
     font-size: 1.5em;
   }
   .social a {
-    font-size: 1.5em;
+    font-size: 6vw;
     padding-left: 7.5%;
     padding-right: 7.5%;
   }
@@ -333,6 +358,12 @@ hr.dark-100 {
   .carousel-indicators {
     display: none;
   }
+  .about-me img {
+    width: 50%;
+  }
+  .about-me p {
+    font-size: 3.5vw;
+  }
   .skills-logo {
     font-size: 1.5em;
   }
@@ -340,7 +371,7 @@ hr.dark-100 {
     font-size: 1em;
   }
   .social a {
-    font-size: 1.75em;
+    font-size: 7.5vw;
     padding-left: 7.5%;
     padding-right: 7.5%;
   }
