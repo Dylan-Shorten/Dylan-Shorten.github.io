@@ -9,10 +9,18 @@ html, body {
   scroll-behavior: smooth;
 }
 .header {
+  position: relative;
   background-color: #e9ecef;
   color: #2c2c2c;
-  text-shadow: 1px 1px 2px #2c2c2c;
+  text-shadow: -1px 1px 2px #2c2c2c;
   border-bottom: 4px solid #BBB;
+}
+.header img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3em;
+  margin: auto;
 }
 .header h1 {
   font-size: 2.5em;
@@ -34,17 +42,17 @@ html, body {
 {
   width: 50px;
   height: 50px;
-  filter:drop-shadow(3px 3px 1px #000);
+  filter:drop-shadow(-3px 3px 1px #000);
 }
 .carousel-caption h1 {
   font-size: 325%;
   text-transform: uppercase;
-  text-shadow: 2px 2px 3px #000;
+  text-shadow: -2px 2px 3px #000;
 }
 .carousel-caption h3 {
   font-size: 175%;
   font-weight: 500;
-  text-shadow: 2px 2px 2px #000;
+  text-shadow: -2px 2px 2px #000;
   padding-bottom: 1rem;
 }
 br {
@@ -61,10 +69,10 @@ br {
   left: 25%;
   width: 50%;
   height: 50%;
-  -moz-box-shadow: #000 5px 5px 15px;
-  -webkit-box-shadow: #000 5px 5px 15px;
-  -o-box-shadow: #000 5px 5px 15px;
-  box-shadow: #000 5px 5px 15px;
+  -moz-box-shadow: #000 -5px 5px 15px;
+  -webkit-box-shadow: #000 -5px 5px 15px;
+  -o-box-shadow: #000 -5px 5px 15px;
+  box-shadow: #000 -5px 5px 15px;
   outline: 3px solid white;
 }
 .project-youtube-icon {
@@ -73,7 +81,7 @@ br {
 .carousel-logo {
   padding-bottom: 10%;
   font-size: 4.5em;
-  filter: drop-shadow(2px 2px 2px #000);
+  filter: drop-shadow(-2px 2px 2px #000);
 }
 .carousel-logo a {
   margin: 5%;
@@ -91,7 +99,7 @@ br {
 }
 .contribution .jumbotron {
   background-color: rgba(25, 25, 25, 0.75);
-  filter: drop-shadow(2px 2px 2px #000);
+  filter: drop-shadow(-2px 2px 2px #000);
   padding: 1.5%;
   outline: 2px solid #FFF;
 }
@@ -123,7 +131,7 @@ br {
 .about-me img {
   width: 50%;
   height: auto;
-  outline: 3px solid #AAA;
+  box-shadow: -3px 3px 6px #000;
 }
 .about-me p {
   font-size: 1.25vw;
@@ -141,9 +149,16 @@ br {
 .skills-text {
   font-size: 1.5em;
 }
+.contact-me img {
+  width: 8em;
+}
+.contact-me p {
+  font-size: 1em;
+}
 .social a {
   font-size: 4vw;
   padding: 5%;
+  filter:drop-shadow(-2px 2px 2px #222);
 }
 
 .fa-bitbucket,
@@ -208,6 +223,9 @@ hr.dark-100 {
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
+  .header img {
+    width: 2.5em;
+  }
   .header h1 {
     font-size: 4vw;
   }
@@ -251,12 +269,17 @@ hr.dark-100 {
   .skills-text {
     font-size: 1.5em;
   }
+  .contact-me p {
+  }
   .social a {
     font-size: 6vw;
     padding: 5%;
   }
-  }
+}
 @media (max-width: 768px) {
+  .header img {
+    width: 2em;
+  }
   .header h1 {
     font-size: 5vw;
   }
@@ -325,6 +348,8 @@ hr.dark-100 {
   .skills-text {
     font-size: 1.5em;
   }
+  .contact-me p {
+  }
   .social a {
     font-size: 6vw;
     padding-left: 7.5%;
@@ -377,6 +402,8 @@ hr.dark-100 {
   }
   .skills-text {
     font-size: 1em;
+  }
+  .contact-me p {
   }
   .social a {
     font-size: 7.5vw;
