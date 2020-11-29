@@ -165,6 +165,7 @@ br {
 .fa-itch-io,
 .fa-youtube {
   color: #d5d5d5;
+  transition: 0.2s;
 }
 .fa-bitbucket:hover,
 .fa-itch-io:hover,
@@ -174,15 +175,19 @@ br {
 
 .fa-github {
   color: #6e5494;
+  transition: 0.2s;
 }
 .social .fa-itch-io {
   color: #FA5C5B;
+  transition: 0.2s;
 }
 .fa-linkedin {
   color: #0a66c2;
+  transition: 0.2s;
 }
 .fa-twitter {
   color: #00aced;
+  transition: 0.2s;
 }
 .fa-github:hover,
 .social .fa-itch-io:hover,
